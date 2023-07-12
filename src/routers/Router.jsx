@@ -35,8 +35,6 @@ const privateRoutes = [
 ]
 export default function Router() {
     const isAuthenticated = UserSessionHelper.isAuthenticated;
-    console.log("isAuthenticated", isAuthenticated);
-
     return (
         <BrowserRouter>
             <Suspense fallback={<Loader />}>
